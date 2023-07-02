@@ -34,7 +34,11 @@ form input {
     border: 1px solid rgb(196, 195, 195);
     margin-bottom: 15px;
 }
-
+a{
+    color: rgb(215, 52, 26);
+    font-weight: 700;
+    text-decoration:none ;
+}
 form {
     margin: auto;
     padding: 100px 5px;

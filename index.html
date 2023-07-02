@@ -12,40 +12,46 @@
     <div class="container">
 
         <div id="sideimg">
-            photo by: Abraham Mignon on Unsplash
             <div id ='logo'>
                 SIGN-UP FORM
             </div>
+            photo by: Abraham Mignon on Unsplash
         </div>
         <form>
             <p style="font-size: large;"> ipsum dolor sit amet consectetur, adipisicing elit. Maxime, aut vero? Minus
                 repudiandae placeat voluptatum repellendus. Quae cum a consectetur accusantium exercitationem,
                 architecto, suscipit repudiandae enim quia non unde nemo!</p>
             <div id="info">
-
                 <div id="col">
                     <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" required>
+                    <input type="text" name="firstname" minlength="3" maxlength="7">
+                    <p id="messageF" ></p>
 
                     <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" required>
+                    <input type="text" name="lastname" minlength="3" maxlength="10">
+                    <p id="messageL" ></p>
 
                     <label for="email">E-mail</label>
                     <input type="email" name="email">
+                    <p id="messageMail"></p>
+                
                 </div>
                 <div id="col">
                     <label for="phonenum" >Phone Number</label>
                     <input type="text" minlength="11" pattern="01\d{9}" name="phonenum">
-
+                    <p id="messageNum" ></p>
                     <label for="pass">Password</label>
                     <input type="password" name="pass" onkeyup="check()">
-
+                    <p id="messagePass" ></p>
                     <label for="conpass">Confirm Password</label>
                     <input type="password" name="conpass" onkeyup="check()" >
+                    <p id="messageCPass" ></p>
                 </div>
             </div>
             <button type="submit" >Create Account</button>
+            <p>Already have an account? Log In</p>
         </form>
+        
     </div>
     <script src="script.js"></script>
 </body>

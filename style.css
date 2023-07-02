@@ -1,58 +1,63 @@
 @font-face {
     font-family: Optima;
     src: url("Optima Font");
-  }
-*{
+}
+
+* {
     padding: 0;
     margin: 0;
     font-family: Optima;
 }
 
-.container{
+.container {
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 100%;
-   
+
 }
 
-#sideimg{
+#sideimg {
     background-image: url("https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60");
     height: 100vh;
-    object-fit:cover;
+    object-fit: cover;
     color: aliceblue;
-    text-align:center;
+    text-align: center;
     width: 50%;
 }
 
 
-form input{
+form input {
     width: 200px;
     height: 20px;
     border-radius: 5px;
     border: 1px solid rgb(196, 195, 195);
     margin-bottom: 20px;
 }
-form{
+
+form {
     margin: auto;
-    padding:  100px 5px;
+    padding: 100px 5px;
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
     width: 50%;
 }
-p{
+
+p {
     margin-top: -50px;
     margin-bottom: 50px;
     margin-left: 20px;
 }
-#logo{
 
-   background-color: rgba(38, 42, 45, 0.5);
-   margin-top: 30%;
-   padding: 100px;
-   font-size: 60px;
+#logo {
+
+    background-color: rgba(38, 42, 45, 0.5);
+    margin-top: 30%;
+    padding: 100px;
+    font-size: 60px;
 }
-#info{
+
+#info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,26 +68,28 @@ p{
     justify-content: flex-start;
     max-width: 90%;
 }
-input:focus{
+
+input:focus {
     border: 1px solid rgb(94, 173, 243);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
-button{
+
+button {
     width: 200px;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid rgb(215,52,26);
+    border: 1px solid rgb(215, 52, 26);
     color: aliceblue;
-    background-color: rgb(215,52,26);
+    background-color: rgb(215, 52, 26);
     font-size: large;
     margin: auto auto auto 20px;
 }
-#col{
+
+#col {
     display: flex;
     flex-direction: column;
 }
-input:invalid{
+
+input:invalid {
     border: 1px solid red;
 }
-
-

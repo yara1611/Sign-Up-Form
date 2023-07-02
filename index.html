@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="sideimg">
+            photo by: Abraham Mignon on Unsplash
+            <div id ='logo'>
+                SIGN-UP FORM
+            </div>
+        </div>
+        <form>
+            <p style="font-size: large;"> ipsum dolor sit amet consectetur, adipisicing elit. Maxime, aut vero? Minus
+                repudiandae placeat voluptatum repellendus. Quae cum a consectetur accusantium exercitationem,
+                architecto, suscipit repudiandae enim quia non unde nemo!</p>
+            <div id="info">
+
+                <div id="col">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" required>
+
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email">
+                </div>
+                <div id="col">
+                    <label for="phonenum" >Phone Number</label>
+                    <input type="text" minlength="11" pattern="01\d{9}" name="phonenum">
+
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" onkeyup="check()">
+
+                    <label for="conpass">Confirm Password</label>
+                    <input type="password" name="conpass" onkeyup="check()" >
+                </div>
+            </div>
+            <button type="submit" >Create Account</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
